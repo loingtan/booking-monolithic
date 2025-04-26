@@ -70,8 +70,6 @@ The application simulates a basic booking system divided into modules:
 - **Booking Module:** Handles the core booking operations, likely coordinating between other modules.
 - **API Host:** A single ASP.NET Core project that hosts all the modules. Modules are not deployed as separate microservices but run within this single process.
 
-![Modular Monolith Diagram](./assets/modular-monolith-diagram.png)
-
 ## Architectural Approach
 
 This project combines elements from **Clean Architecture** and **Vertical Slice Architecture**, organizing code primarily by feature using a **Feature Folder** structure.
@@ -85,9 +83,6 @@ This project combines elements from **Clean Architecture** and **Vertical Slice 
 **Vertical Slices & REPR Pattern:**
 Each feature or use case is treated as a distinct "vertical slice," encapsulating all necessary logic from API endpoint to data access. This minimizes coupling *between* slices and maximizes cohesion *within* a slice.
 
-<div align="center">
-  <img src="./assets/vertical-slice-architecture.png" alt="Vertical Slice Architecture Diagram" />
-</div>
 
 Instead of traditional controllers with multiple actions, the project leans towards the **REPR (Request-Endpoint-Response) pattern**. Each API action gets its own endpoint class containing:
 
