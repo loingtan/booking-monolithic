@@ -58,7 +58,7 @@ public class Flight : Aggregate<long>
         AircraftId = aircraftId;
         DepartureAirportId = departureAirportId;
         DepartureDate = departureDate;
-        arriveDate = ArriveDate;
+        ArriveDate = arriveDate;
         ArriveAirportId = arriveAirportId;
         DurationMinutes = durationMinutes;
         FlightDate = flightDate;
